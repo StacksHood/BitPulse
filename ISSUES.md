@@ -7,8 +7,8 @@ Detailed development tasks for the BitPulse milestone tracking system.
 ### Phase 1: Milestone Architecture
 - [x] **Issue #1**: Define Milestone Data Schema
   - ✅ Created robust maps for project milestones with status tracking.
-- [ ] **Issue #2**: Implement Milestone Submission Logic
-  - Functions for creators to submit proof of work.
+- [x] **Issue #2**: Implement Milestone Submission Logic
+  - ✅ Built the function for project creators to submit proof of work for milestones.
 - [ ] **Issue #3**: Implement Verification Logic
   - Add logic for signers or automated checks to verify milestones.
 
