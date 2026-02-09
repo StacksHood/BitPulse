@@ -5,8 +5,8 @@ Detailed development tasks for the BitPulse milestone tracking system.
 ## 🛠️ Smart Contract Issues
 
 ### Phase 1: Milestone Architecture
-- [ ] **Issue #1**: Define Milestone Data Schema
-  - Create maps for project milestones and completion status.
+- [x] **Issue #1**: Define Milestone Data Schema
+  - ✅ Created robust maps for project milestones with status tracking.
 - [ ] **Issue #2**: Implement Milestone Submission Logic
   - Functions for creators to submit proof of work.
 - [ ] **Issue #3**: Implement Verification Logic
