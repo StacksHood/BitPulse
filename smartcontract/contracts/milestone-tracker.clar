@@ -31,3 +31,10 @@
       }))
   )
 )
+
+(define-public (submit-milestone-proof (campaign-id uint) (milestone-id uint))
+  (let ((milestone (unwrap! (map-get? milestones { campaign-id: campaign-id, milestone-id: milestone-id }) ERR_MILESTONE_NOT_FOUND)))
+    (asserts! (not (get completed milestone)) (err u102))
+    (ok (map-set milestones { campaign-id: campaign-id, milestone-id: milestone-id } (merge milestone { status: "SUBMITTED" })))
+  )
+)
