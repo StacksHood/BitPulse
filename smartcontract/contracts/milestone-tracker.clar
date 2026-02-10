@@ -38,3 +38,10 @@
     (ok (map-set milestones { campaign-id: campaign-id, milestone-id: milestone-id } (merge milestone { status: "SUBMITTED" })))
   )
 )
+
+(define-public (verify-milestone (campaign-id uint) (milestone-id uint))
+  (let ((milestone (unwrap! (map-get? milestones { campaign-id: campaign-id, milestone-id: milestone-id }) ERR_MILESTONE_NOT_FOUND)))
+    (asserts! (is-eq tx-sender contract-owner) ERR-NOT-AUTHORIZED)
+    (ok (map-set milestones { campaign-id: campaign-id, milestone-id: milestone-id } (merge milestone { status: "APPROVED", completed: true })))
+  )
+)
