@@ -1,6 +1,8 @@
-# BitPulse Roadmap & Issues
+# BitPulse - Roadmap & Issues
 
 Detailed development tasks for the BitPulse milestone tracking system.
+
+---
 
 ## 🛠️ Smart Contract Issues
 
@@ -10,11 +12,15 @@ Detailed development tasks for the BitPulse milestone tracking system.
 - [x] **Issue #2**: Implement Milestone Submission Logic
   - ✅ Built the function for project creators to submit proof of work for milestones.
 - [ ] **Issue #3**: Implement Verification Logic
-  - Add logic for signers or automated checks to verify milestones.
+  - [ ] Implement `verify-milestone` (Admin/Validator only).
+  - [ ] Add `revoke-milestone` for fraud protection.
+  - [ ] Implement milestone completion event emission.
 
 ### Phase 2: Fund Management
 - [ ] **Issue #4**: Add Milestone-Based Disbursement
+  - [ ] Implement automated release of funds upon verification.
 - [ ] **Issue #5**: Implement Multi-sig Verification Roles
+  - [ ] Add multiple validators for high-value projects.
 
 ---
 
@@ -22,11 +28,21 @@ Detailed development tasks for the BitPulse milestone tracking system.
 
 ### Phase 3: UI & Tracking
 - [ ] **Issue #6**: Dashboard Page Shell
-  - Professional "Surveillance" style interface.
+  - [ ] Professional "Terminal Surveillance" interface.
 - [ ] **Issue #7**: Wallet Provider Setup
-  - Core authentication and session hydration.
+  - [ ] Handle auth states and address truncation.
 
 ### Phase 4: Core Interfaces
 - [ ] **Issue #8**: Milestone Progress Visualization
+  - [ ] Implement a timeline or gantt-style status view.
 - [ ] **Issue #9**: Verification Panel for Signers
+  - [ ] Secure interface for validators to approve proofs.
 - [ ] **Issue #10**: Project Timeline Component
+  - [ ] Build interactive history of project updates.
+
+---
+
+## 📊 Priority Levels
+- **P0**: Milestone Core, Submission Logic
+- **P1**: Verification Logic, Fund Disbursement
+- **P2**: UI Dashboards, Multi-sig
