@@ -15,8 +15,8 @@ Detailed development tasks for the BitPulse milestone tracking system.
   - ✅ Implemented `verify-milestone` for administrative approval.
 
 ### Phase 2: Fund Management
-- [ ] **Issue #4**: Add Milestone-Based Disbursement
-  - [ ] Implement automated release of funds upon verification.
+- [x] **Issue #4**: Add Milestone-Based Disbursement
+  - ✅ Implemented automated release of funds upon verification of milestones.
 - [ ] **Issue #5**: Implement Multi-sig Verification Roles
   - [ ] Add multiple validators for high-value projects.
 

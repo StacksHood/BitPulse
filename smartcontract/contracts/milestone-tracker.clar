@@ -41,7 +41,18 @@
 
 (define-public (verify-milestone (campaign-id uint) (milestone-id uint))
   (let ((milestone (unwrap! (map-get? milestones { campaign-id: campaign-id, milestone-id: milestone-id }) ERR_MILESTONE_NOT_FOUND)))
-    (asserts! (is-eq tx-sender contract-owner) ERR-NOT-AUTHORIZED)
+    (asserts! (is-eq tx-sender contract-owner) ERR_NOT_AUTHORIZED)
     (ok (map-set milestones { campaign-id: campaign-id, milestone-id: milestone-id } (merge milestone { status: "APPROVED", completed: true })))
   )
+)
+
+(define-public (disburse-milestone-funds (campaign-id uint) (milestone-id uint) (recipient principal))
+  (let ((milestone (unwrap! (map-get? milestones { campaign-id: campaign-id, milestone-id: milestone-id }) ERR_MILESTONE_NOT_FOUND)))
+    (asserts! (is-eq tx-sender contract-owner) ERR_NOT_AUTHORIZED)
+    (asserts! (get completed milestone) (err u103))
+    (try! (as-contract (stx-transfer? (get target-amount milestone) (as-contract tx-sender) recipient)))
+    (ok true)
+  )
+)
+
 )
