@@ -25,14 +25,14 @@ Detailed development tasks for the BitPulse milestone tracking system.
 ## 💻 Frontend Issues
 
 ### Phase 3: UI & Tracking
-- [ ] **Issue #6**: Dashboard Page Shell
-  - [ ] Professional "Terminal Surveillance" interface.
-- [ ] **Issue #7**: Wallet Provider Setup
-  - [ ] Handle auth states and address truncation.
+- [x] **Issue #6**: Dashboard Page Shell
+  - ✅ Built professional "Terminal Surveillance" interface with responsive design.
+- [x] **Issue #7**: Wallet Provider Setup
+  - ✅ Implemented auth states, address truncation, and wallet context.
 
 ### Phase 4: Core Interfaces
-- [ ] **Issue #8**: Milestone Progress Visualization
-  - [ ] Implement a timeline or gantt-style status view.
+- [x] **Issue #8**: Milestone Progress Visualization
+  - ✅ Created interactive timeline with gantt-style status views.
 - [ ] **Issue #9**: Verification Panel for Signers
   - [ ] Secure interface for validators to approve proofs.
 - [ ] **Issue #10**: Project Timeline Component
