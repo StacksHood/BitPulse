@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
+import { WalletProvider } from "./context/WalletContext";
+import { Header } from "./components/Header";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -17,7 +19,10 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className="bg-terminal-bg text-terminal-text">
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
-          {children}
+          <WalletProvider>
+            <Header />
+            {children}
+          </WalletProvider>
         </ThemeProvider>
       </body>
     </html>
