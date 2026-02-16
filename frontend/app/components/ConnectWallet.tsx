@@ -4,7 +4,13 @@ import { useWallet } from "../context/WalletContext";
 import styles from "./ConnectWallet.module.css";
 
 export function ConnectWallet() {
-  const { isConnected, address, connectWallet, disconnectWallet, truncateAddress } = useWallet();
+  const {
+    isConnected,
+    address,
+    connectWallet,
+    disconnectWallet,
+    truncateAddress,
+  } = useWallet();
 
   return (
     <div className={styles.container}>
@@ -16,8 +22,13 @@ export function ConnectWallet() {
       ) : (
         <div className={styles.connectedContainer}>
           <span className={styles.status}>Connected</span>
-          <span className={styles.address}>{truncateAddress(address || "")}</span>
-          <button onClick={disconnectWallet} className={styles.disconnectButton}>
+          <span className={styles.address}>
+            {truncateAddress(address || "")}
+          </span>
+          <button
+            onClick={disconnectWallet}
+            className={styles.disconnectButton}
+          >
             ✕
           </button>
         </div>

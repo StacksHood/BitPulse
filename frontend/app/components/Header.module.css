@@ -1,90 +1,90 @@
 .header {
-  background: #0f1419;
-  border-bottom: 2px solid #00ff88;
-  padding: 16px 0;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  box-shadow: 0 2px 8px rgba(0, 255, 136, 0.1);
+	background: #0f1419;
+	border-bottom: 2px solid #00ff88;
+	padding: 16px 0;
+	position: sticky;
+	top: 0;
+	z-index: 100;
+	box-shadow: 0 2px 8px rgba(0, 255, 136, 0.1);
 }
 
 .container {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 0 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .branding {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
 }
 
 .title {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #00ff88;
-  text-shadow: 0 0 8px #00ff88;
-  letter-spacing: 2px;
-  margin: 0;
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: #00ff88;
+	text-shadow: 0 0 8px #00ff88;
+	letter-spacing: 2px;
+	margin: 0;
 }
 
 .tagline {
-  font-size: 0.8rem;
-  color: #b0b0b0;
-  font-family: "Courier New", monospace;
-  margin: 0;
+	font-size: 0.8rem;
+	color: #b0b0b0;
+	font-family: "Courier New", monospace;
+	margin: 0;
 }
 
 .nav {
-  display: flex;
-  align-items: center;
-  gap: 32px;
+	display: flex;
+	align-items: center;
+	gap: 32px;
 }
 
 .link {
-  color: #e0e0e0;
-  font-size: 0.95rem;
-  font-family: "Courier New", monospace;
-  transition: color 0.3s ease;
-  position: relative;
+	color: #e0e0e0;
+	font-size: 0.95rem;
+	font-family: "Courier New", monospace;
+	transition: color 0.3s ease;
+	position: relative;
 }
 
 .link:hover {
-  color: #00ff88;
+	color: #00ff88;
 }
 
 .link::after {
-  content: "";
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: #00ff88;
-  transition: width 0.3s ease;
+	content: "";
+	position: absolute;
+	bottom: -4px;
+	left: 0;
+	width: 0;
+	height: 2px;
+	background: #00ff88;
+	transition: width 0.3s ease;
 }
 
 .link:hover::after {
-  width: 100%;
+	width: 100%;
 }
 
 @media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    gap: 16px;
-  }
+	.container {
+		flex-direction: column;
+		gap: 16px;
+	}
 
-  .nav {
-    width: 100%;
-    flex-direction: column;
-    gap: 12px;
-  }
+	.nav {
+		width: 100%;
+		flex-direction: column;
+		gap: 12px;
+	}
 
-  .title {
-    font-size: 1.2rem;
-  }
+	.title {
+		font-size: 1.2rem;
+	}
 }

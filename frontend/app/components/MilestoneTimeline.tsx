@@ -82,7 +82,9 @@ export function MilestoneTimeline() {
                     style={{ width: `${milestone.percentage}%` }}
                   />
                 </div>
-                <span className={styles.percentage}>{milestone.percentage}%</span>
+                <span className={styles.percentage}>
+                  {milestone.percentage}%
+                </span>
               </div>
 
               <p className={styles.dueDate}>Due: {milestone.dueDate}</p>

@@ -1,49 +1,49 @@
 @import "tailwindcss";
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-  background-color: #0a0e27;
-  color: #e0e0e0;
-  font-family: "Courier New", monospace;
-  line-height: 1.6;
+	background-color: #0a0e27;
+	color: #e0e0e0;
+	font-family: "Courier New", monospace;
+	line-height: 1.6;
 }
 
 @supports (font-variation-settings: normal) {
-  body {
-    font-family: "Courier New", monospace;
-  }
+	body {
+		font-family: "Courier New", monospace;
+	}
 }
 
 a {
-  color: #00ff88;
-  text-decoration: none;
-  transition: color 0.3s ease;
+	color: #00ff88;
+	text-decoration: none;
+	transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #00cc6a;
+	color: #00cc6a;
 }
 
 /* Terminal-style scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+	width: 8px;
+	height: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #0a0e27;
+	background: #0a0e27;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #00ff88;
-  border-radius: 4px;
+	background: #00ff88;
+	border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #00cc6a;
+	background: #00cc6a;
 }
